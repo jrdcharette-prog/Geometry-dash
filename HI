@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Geometry Dash Game</title>
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      color: #fff;
+      font-family: system-ui, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      padding-top: 20px;
+    }
+    h1 {
+      margin-bottom: 8px;
+      font-size: 24px;
+    }
+    p {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    #gameContainer {
+      border: 2px solid #444;
+      background: linear-gradient(#222, #000);
+    }
+    canvas {
+      display: block;
+    }
+    #status {
+      margin-top: 8px;
+      font-size: 14px;
+    }
+    #restartBtn {
+      margin-top: 8px;
+      padding: 6px 12px;
+      border: none;
+      background: #ffcc00;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Geometry Dash</h1>
+  <p>Press SPACE or CLICK to jump</p>
+
+  <div id="gameContainer">
+    <canvas id="game" width="800" height="300"></canvas>
+  </div>
+
+  <div id="status">Score: <span id="score">0</span></div>
+  <button id="restartBtn">Restart</button>
+
+  <script src="game.js"></script>
+</body>
+</html>
